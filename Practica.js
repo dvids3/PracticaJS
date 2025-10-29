@@ -50,7 +50,7 @@ console.log(nota2+1)        //IMPRIME 6 "Es NAN, prq no se le ha dado valor a no
 //EJERCICIO #2
 let nota3 = 0;
 subirNota2();
-console.log(extra);      //NAN "7, extra se vuelve global"
+console.log(extra);      //NAN "7, prq extra se vuelve global"
 console.log(PUNTOS);     //10 "Error, prq la constante muere en la funcion, no se vuelve global"
 
     function subirNota2(){
@@ -59,3 +59,16 @@ console.log(PUNTOS);     //10 "Error, prq la constante muere en la funcion, no s
         console.log(nota3);      //IMPRIME 2
         const PUNTOS = 10;
     }
+
+
+
+//EJERCICIO #3
+console.log(miNombre2);     //IMPRIME ERROR "Undefinded, prq no esta definido todavia"
+let color = "Rojo";
+if (true){
+    var miNombre2 = "David";
+    let color = "Cafe"
+}
+console.log(miNombre2)       //IMPRIME David
+console.log(color)      //IMPRIME ROJO O ERROR
+
